@@ -1,0 +1,128 @@
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet">
+		<script src="javascript.js"></script>
+	</head>
+	<body>
+		<div class="first">
+			<div class="second">
+				<p class="third"><b>Travel Authorization Form</b></p>
+			</div>
+			<div class="fourth"><b>Section A: Client Information</b>
+			</div>
+			<div class="fifth"><hr></div>
+			<div class="sixth">
+				
+				<form method="post" action="" name="form">
+					<table>
+						<tr>
+							<td>Title:</td><td><input type="text" id="title" name="title" value=""</td>
+						</tr>
+						<tr>
+							<td>First name:</td><td><input type="text" id="firstname" name="fname" value=""></td>
+						</tr>
+						<tr>
+							<td>Middle initial:</td><td><input type="text" id="middle" name="initial" value=""></td>
+						</tr>
+						<tr>
+							<td>Last name:</td><td><input type="text" id="lastname" name="lname" value=""></td>
+						</tr>
+						<tr>
+							<td>Email address:</td><td><input type="text"id="emailadd"  name="email" value=""></td>
+						</tr>
+						<tr>
+							<td>Phone number:</td><td><input type="text"id="number" name="phone" value=""</td>
+						</tr>
+					</table>
+				</form>
+			
+			</div>
+			<div class="fourth"><b>Section B: Travel Information</b>
+			</div>
+			<div class="fifth"><hr></div>
+			<div>
+				<div class="seventh">
+					<form method="post" action="" name="form">
+						<table>
+							<tr>
+								<td>Airline name:</td>
+								<td>
+									<select id="air" name="airline">
+										<option>Select an airline</option>
+										<option>Air India</option>
+										<option>Jet Blue</option>
+										<option>Emirates</option>
+										<option>Qatar Airways</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>Destination:</td><td><input type="text" id="destination" name="dest" value=""></td>
+							</tr>
+							<tr>
+								<td>Leave date:</td><td><input type="date" id="ldate" name="leave" value=""></td>
+							</tr>
+							<tr>
+								<td>Return date:</td><td><input type="date" id="rdate" name="return" value=""></td>
+							</tr>
+							<tr>
+								<td>Estimated cost:</td><td><input type="text" id="ecost" name="cost" value=""></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<div class="eight">
+					<form method="post" action="" name="form">
+						<table>
+							<tr>
+								<td>Additional estimated expenses:</td>
+							</tr>
+							<tr>
+								<td>Car rental</td><td><input type="text" id="carrent" name="rent" value=""</td>
+							</tr>
+							<tr>
+								<td>Hotel</td><td><input type="text" id="hotel" name="hotel" value=""</td>
+							</tr>
+							<tr>
+								<td>Meals</td><td><input type="text" id="meal" name="meal" value=""</td>
+							</tr>
+							<tr>
+								<td>Total estimate</td><td><input type="text" id="estimate" name="estimate" value="$0.00"></td>
+							</tr>
+						</table>
+					</form>	
+				</div>
+			</div>
+			<br>
+			<div class="nine">
+				<p>Includes</p>
+				<span>customer visit?   <input type="checkbox" name="visit" value="yes"> Yes</span>
+				<form method="post" action="" value="">
+					<table class="ten">
+						<tr><td>Payment method used:</td></tr>
+						<tr>
+							<td>Cash</td><td><input type="radio" name="cash" value="cash"</td>
+						</tr>
+						<tr>
+							<td>Credit card</td><td><input type="radio" name="cash" value="card"</td>
+						</tr>
+						<tr>
+							<td>Check</td><td><input type="radio" name="cash" value="check"</td>
+						</tr>
+					</table>
+					
+				</form>
+			</div>
+			<div class="eleven">Purpose of travel:</div>
+			<div class="twelve">
+			<textarea name="purpose" id="msg" value="" rows="5" cols="50"></textarea>
+			</div>
+			<div class="thirteen">
+				<!--<input type="submit" class="fourteen" name="submit" value="Submit">-->
+				<input type="submit" value="submit" class="fourteen" id="submit" name="Submit" onclick="return validate()">
+			</div>
+			
+			
+		</div>
+	</body>
+</html>
